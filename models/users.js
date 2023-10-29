@@ -35,6 +35,7 @@ Users.init(
         sequelize,
         modelName: 'Users',
         timestamps: true,
+        onCascade: 'Delete',
     }
 );
 

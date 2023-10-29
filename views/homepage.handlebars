@@ -21,6 +21,12 @@
     <h2 class="title">Welcome Techies</h2>
     <p class="start">Welcome to Tory's Tech Blog! You can save important tips, reminders, and shortcuts by posting them here. Simply login or register to get started.</p>
 </section>
+
+<section class="posts">
+   {{#each posts as |post|}}
+   {{>post-details}}
+   {{/each}}
+</section>
 <script src="../public/JS/script.js"></script>
 </body>
 </html>

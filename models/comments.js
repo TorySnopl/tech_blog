@@ -18,6 +18,7 @@ Comments.init(
         sequelize,
         modelName: 'Comments',
         timestamps: true,
+        onCascade: 'Delete',
     }
 );
 

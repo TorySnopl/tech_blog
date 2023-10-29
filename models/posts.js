@@ -22,6 +22,7 @@ Posts.init(
         sequelize,
         modelName: 'Posts',
         timestamps: true,
+        onCascade: 'Delete',
     }
 );
 
