@@ -9,7 +9,7 @@ router.get('/',async (req,res)=>{
 
         const posts = postData.map((post)=> post.get({plain: true}));
 
-        res.render('homepage',{
+        res.render('homepage1',{
             posts,
         });
     } catch (err) {
@@ -18,5 +18,12 @@ router.get('/',async (req,res)=>{
     }
    
 });
+
+
+router.get('/login', (req,res)=>{
+
+    res.render('login');
+}
+);
 
 module.exports = router;
