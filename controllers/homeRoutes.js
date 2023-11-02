@@ -9,7 +9,7 @@ router.get('/',async (req,res)=>{
 
         const posts = postData.map((post)=> post.get({plain: true}));
 
-        res.render('homepage1',{
+        res.render('homepage',{
             posts,
         });
     } catch (err) {
