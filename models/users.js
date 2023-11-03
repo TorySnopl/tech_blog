@@ -51,9 +51,11 @@ Users.init(
         },
       },
         sequelize,
-        modelName: 'Users',
         timestamps: true,
-        onCascade: 'Delete',
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'users',
+       
     }
 );
 
