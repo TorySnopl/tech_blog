@@ -1,20 +1,7 @@
-// import models
-const Comments = require('./comments');
-const Posts = require('./posts');
-const Users = require('./users');
-const Sessions = require('./sessions');
+const User = require('./user');
+const Pet = require('./Pet');
 
-Posts.belongsTo(Users,{foreignKey: 'id'});
+User.associate({ Pet });
+Pet.associate({ User });
 
-Comments.belongsTo(Users, {foreignKey: 'id'});
-Comments.belongsTo(Posts, {foreignKey: 'id'});
-
-Sessions.belongsTo(Users, {foreignKey: 'id'});
-
-
-module.exports = {
-  Comments,
-  Posts,
-  Users,
-  Sessions,
-};
+module.exports = { User, Pet };

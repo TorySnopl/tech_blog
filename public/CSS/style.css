@@ -1,12 +1,32 @@
-:root {
-    --lblue: #C3E0E5;
-    --mdlblue: #5885af;
-    --mdblue: #41729f;
-    --dblue: #274472;
+/* Custom styles */
+.bg-pageBg {
+    background-color: #F1F5F9;
 }
 
-.navbar{
-    background-color: var(--dblue);
-    font-size: 45px;
-    font-family: sans-serif;
+.bg-cardBg {
+    background-color: #FFFFFF;
+}
+
+.bg-commentsBg {
+    background-color: #EDEDED;
+}
+
+.text-textColor {
+    color: #1F2937;
+}
+
+.text-headerColor {
+    color: #10B981;
+}
+
+.border-headerBorder {
+    border-color: #10B981;
+}
+
+.bg-actionColor {
+    background-color: #10B981;
+}
+
+.bg-secondaryAction {
+    background-color: #E5E7EB;
 }

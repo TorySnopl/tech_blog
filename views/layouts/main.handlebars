@@ -1,28 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Torys Tech Blog</title>
-  <link rel="stylesheet" href="/CSS/style.css">
+  <title>🐱 FureverFriends 🐶</title>
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body>
-  <div class="flex-column justify-space-around">
-    <main class="container container-fluid mt-5">
-      
+<body class="bg-pageBg text-textColor">
+  <div class="container mx-auto p-6">
+    <header class="text-center text-4xl mb-8">
+      <h1 class="font-bold text-headerColor border-b-2 border-headerBorder py-2">🐱 FureverFriends 🐶</h1>
+    </header>
+    <main>
+      <!-- Render the sub layout -->
       {{{ body }}}
     </main>
-    <footer>
-      
-    </footer>
+    <footer class="text-center text-textColor mt-6 py-4 border-t-2 border-headerBorder">&copy; 2023 FureverFriends. All rights reserved.</footer>
   </div>
-
-
-  {{#if logged_in}}
-  <script src="/JS/logout.js" type="text/js"></script>
+  <!-- Render script for logged in users only -->
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
   {{/if}}
 </body>
-
 </html>
+
