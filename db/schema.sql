@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS FureverFriends_db;
-CREATE DATABASE FureverFriends_db;
+DROP DATABASE IF EXISTS blog_db;
+CREATE DATABASE blog_db;
 
 
-USE FureverFriends_db;
+USE blog_db;
 
